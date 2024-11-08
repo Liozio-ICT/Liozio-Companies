@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta %}
+  <meta name="DC.title" content="Careers - Liozio Companies">
+  <meta name="DC.description" content="Get in touch with Liozio Companies to learn more about our sustainable projects, services, and innovative solutions.">
+  <link rel="canonical" href="https://www.lioziocompanies.com/contact/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Liozio Companies Career Opportunities - Your Gateway to Sustainable Innovation">
+  <meta name="twitter:description" content="Contact Liozio Companies to discuss our services and projects. We're here to assist with your inquiries and provide information about our sustainable innovations.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1722347219/logolight_qtttdz.png">
+  <meta name="twitter:site" content="@LiozioCompanies">
+  <link rel="alternate" href="https://www.lioziocompanies.com/contact/" hreflang="en">
+{% endblock meta %}
+
+
+
+{% block title %}
+Liozio Comapnies Careers  - Available Career Opportunities 
+{% endblock title %}
+{% block styles %}
+    {% include 'LiozioMainApp/includes/_links.html' %}
+    
+    {% endblock styles %}
+  </head>
+  {% block content %}
+    <div id="smooth-wrapper" class="mil-wrapper">
+  
+    <!-- top panel -->
+    {% include 'LiozioMainApp/includes/_header.html' %}
+
+    <!-- top panel end -->
+
+        <!-- content -->
+        <div id="smooth-content" class="mil-content">
+            <div class="mil-banner-inner-page" style="background-image:url({% static "img/career_success.jpg" %})">
+                <div class="mil-overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mil-banner-text-frame">
+                                    <div class="mil-banner-text">
+                                        <ul class="mil-breadcrumbs mil-mb-30">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                        </ul>
+                                        <h1 class="mil-light">Our Career Opportunities</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- about -->
+             <div class="mil-p-200-100">
+                <div class="container">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-xl-6 mil-mb-100">
+                            <div class="mil-suptitle mil-sm mil-accent mil-mb-30 mil-up">Our Career Opportunities - Liozio Companies</div>
+                            <h2 class="mil-mb-30 mil-up">Join Us in Shaping a Sustainable Future</h2>
+                            <p class="mil-text-22 mil-mb-30 mil-up">We offer you a career, not just a job. We believe our people will be the secret recipe of our success. Therefore, we place high emphasis on employee relations, development, and satisfaction. </p>
+                            
+                        </div>
+                        <div class="col-xl-5 mil-mb-100">
+                            {% comment %} <div class="mil-image-simple mil-land-plus mil-up mil-mb-30">
+                                <img loading="lazy" src="{% static "img/segun_smile.png" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                            </div> {% endcomment %}
+                            <div class="mil-image-simple2 mil-land-short mil-up">
+                                <img loading="lazy" src="{% static "img/ea1.png" %}" style="object-position:top;" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- about end -->
+
+
+            <div class="mil-p-200-100">
+                <div class="container">
+                    <div class="row justify-content-between align-items-end">
+                        {% for opening in openings  %}
+                        <div class="col-xl-4 mil-mb-50">
+                            <a class="mil-blog-card" href="{% url "career-detail" opening.slug %}">
+                            <div class="mil-cover-frame mil-up">
+                                <div class="mil-hover-frame"><img loading="lazy" src="{% if opening.title == "Farm Technician(Fishery)" %}{% static "img/fishery_career.jpg" %} {% elif opening.title == "Executive Assistant to the CEO" %} {% static "img/ea3.png" %} {% else %} {% static opening.image %}{% endif %}" alt="{{opening.title}}"
+                                        data-value-1="1" data-value-2="1.1" class="mil-scale-img" /></div>
+                            </div>
+                            <div class="mil-descr mil-up">
+                                <h5 class="mil-mb-10">{{opening.title}}</h5>
+                                <p class="mil-text-16">{{opening.date_published}}</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                        {% endfor %}
+                        </div>
+                </div>
+            </div>
+            <div class="mil-p-200-100 mil-bg-accent " style="background-color: #144E4E;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 mil-mb-100">
+                            <div class="mil-cta-box mil-item-1">
+                                <div class="mil-suptitle mil-sm mil-light mil-mb-30 mil-up text-center">Building a Future Together</div>
+                                <h2 class="mil-h2 mil-light mil-mb-30 mil-up text-center">Your Career Starts Here <br></h2>
+                                <p class="mil-light mil-mb-50 mil-up text-center">We offer a supportive work environment, career development opportunities, competitive benefits, and a commitment to employee engagement. Join us to thrive in a dynamic, inclusive, and growth-oriented umbrella of companies.</p>
+                                <div class="mil-up text-center"><a href="{% url "services" %}" class="mil-btn mil-btn-border mil-light">Contact us</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include "LiozioMainApp/includes/_footer.html" %}
+        </div>
+    <!-- content end -->
+
+</div>
+
+  {% endblock content %}
+  {% block scripts %}
+        {% include "LiozioMainApp/includes/_scripts.html" %}
+  {% endblock scripts %}
+
+</html>

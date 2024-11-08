@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta %}
+<meta name="DC.title" content="Liozio Companies Services - Innovative Solutions for Sustainable Development">
+<meta name="DC.description" content="Explore Liozio Companies' range of services dedicated to sustainable development and innovation. From architectural design to smart car solutions, discover how our expertise drives positive change.">
+<meta name="keywords" content="Liozio Companies, services, sustainable development, architectural design, urban planning, small group work, smart car solutions, real estate development, sustainable farming, innovation, Ibadan">
+<link rel="canonical" href="https://www.lioziocompanies.com/services/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Liozio Companies Services - Innovative Solutions for Sustainable Development">
+<meta name="twitter:description" content="Discover the diverse services offered by Liozio Companies, focusing on sustainable development and innovation. Learn about our architectural design, urban planning, and more.">
+<meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1722347219/logolight_qtttdz.png">
+<meta name="twitter:site" content="@LiozioCompanies">
+<link rel="alternate" href="https://www.lioziocompanies.com/services/" hreflang="en">
+{% endblock meta %}
+
+
+{% block title %}
+Liozio Companies Projects - Showcasing Our Sustainable Innovations and Solutions
+{% endblock title %}
+{% block styles %}
+    {% include 'LiozioMainApp/includes/_links.html' %}
+    
+    {% endblock styles %}
+  </head>
+  {% block content %}
+    <div id="smooth-wrapper" class="mil-wrapper">
+  
+    <!-- top panel -->
+    {% include 'LiozioMainApp/includes/_header.html' %}
+
+    <!-- top panel end -->
+
+        <!-- content -->
+        <div id="smooth-content" class="mil-content">
+
+            <!-- banner -->
+            <div class="mil-banner-inner-page" style="background-image: url({% static "img/projects/0.png" %})">
+                <div class="mil-overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mil-banner-text-frame">
+                                    <div class="mil-banner-text">
+                                        <ul class="mil-breadcrumbs mil-mb-30">
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="{% url "projects" %}">Projects</a></li>
+                                        </ul>
+                                        <h1 class="mil-light">Projects</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner end -->
+
+            <!-- works -->
+            <div class="mil-p-200-100">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-12">
+                            {% for project in projects  %}
+                            <a href="{% url "project-detail" project.slug %}" class="mil-project-card mil-land-m mil-mb-50">
+                                <div class="mil-cover-frame mil-up">
+                                    <div class="mil-hover-frame">
+                                        <img loading="lazy" src="{% static project.image_url %}" alt="project" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                                    </div>
+                                </div>
+                                <div class="mil-descr mil-pad-0 mil-up">
+                                    <h4 class="mil-mb-10">{{project.name}}: {{project.location}}</h4>
+                                    <p>{{project.category}}</p>
+                                </div>
+                            </a>
+                            {% endfor %}
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- works end -->
+
+              <!-- footer -->
+        {% include "LiozioMainApp/includes/_footer.html" %}
+        <!-- footer end -->
+
+
+    </div>
+    <!-- content end -->
+
+</div>
+
+  {% endblock content %}
+  {% block scripts %}
+        {% include "LiozioMainApp/includes/_scripts.html" %}
+  {% endblock scripts %}
+
+</html>

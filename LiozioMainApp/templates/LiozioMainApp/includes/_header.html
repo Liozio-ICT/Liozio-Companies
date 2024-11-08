@@ -1,0 +1,45 @@
+{% load static %}
+<a id="mil-btt" class="mil-back-to-top"
+      ><i class="fas fa-arrow-up"></i
+    ></a>
+    <div class="mil-top-panel-frame">
+      <div class="container">
+        <div class="mil-top-panel">
+          <div class="mil-left">
+            <a class="mil-logo mil-logo-sm" href="/"
+              ><img loading="lazy" src="{% static "img/refinedlogo.png" %}" alt="Liozio Companies"
+            /></a>
+            <nav>
+              <ul class="mil-navigation">
+                <li class="{% if active_page == 'home' %}mil-current{% endif %}">
+                  <a href="/">Home</a>
+                </li>
+                <li class="{% if active_page == 'about' %}mil-current{% endif %}"><a href="{% url "about" %}">About us</a></li>
+                <li class="{% if active_page == 'services' %}mil-current{% endif %}"><a href="{% url "services" %}">Services</a></li>
+                <li class="{% if active_page == 'projects' %}mil-current{% endif %}">
+                  <a href="{% url "projects" %}">PROJECTS</a>
+                </li>
+                <li class="{% if active_page == 'careers' %}mil-current{% endif %}">
+                  <a href="{% url "careers" %}">CAREERS</a>
+                </li>
+                <li class="{% if active_page == 'contact' %}mil-current{% endif %}"><a href="{% url "contact" %}">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mil-right">
+            <ul class="mil-navigation mil-leng mil-white">
+              <li>
+                <a href="#.">COMPANIES</a>
+                <ul>
+                  <li><a target="_blank" href="https://lioziofarms.com/">LFF</a></li>
+                  <li><a target="_blank" href="https://joombow.com/">TLS</a></li>
+                  <li><a target="_blank" href="https://lioziorealestate.com/">LREC</a></li>
+                  <li><a target="_blank" href="https://lioziohub.com">LIST</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="mil-menu-btn"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
