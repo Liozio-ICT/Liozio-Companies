@@ -11,9 +11,9 @@ projects_data = [
             Our farm also serves as a model for other agricultural ventures, showcasing best practices in sustainable farming and community development."""
         ),
         "url" : "https://lioziofarms.com/",
-        "image_url": "img/lff1.jpg",
+        "image_url": "img/adminstrative_block.jpg",
         "slug": "liozio-farms-and-foods",
-        "other_image_url" : ["img/lff_bulls.jpg", "img/lff_pigs.jpg", "img/lff_ram.jpg"],
+        "other_image_url" : ["img/ponds.jpg", "img/updated_lff_pond.jpg", "img/updated_lff_pond2.jpg"],
         "conclusion_date": "December 2024",
         "client": "Liozio Farms",
         "size": 50000,
@@ -32,8 +32,8 @@ projects_data = [
             Completion is scheduled for November 2024, marking a significant milestone in our real estate portfolio."""
         ),
         "url" : "#",
-        "image_url": "img/agnes1.jpg",
-        "other_image_url" : ["img/lrec_image_plans.jpg", "lrec_image_plans.jpg", "img/lrec.png"],
+        "image_url": "img/lrec6.jpg",
+        "other_image_url" : ["img/lrec4.jpg", "lrec5.jpg", "img/lrec5.jpg"],
         "slug": "the-agnes",
         "conclusion_date": "November 2024",
         "client": "Liozio Real Estate Company",
@@ -53,7 +53,7 @@ projects_data = [
             JOOMBOW1 is set to open its doors in October 2024, becoming a cornerstone of our automotive services division."""
         ),
         "url" : "https://joombow.com/",
-        "image_url": "img/joombow_site.jpg",
+        "image_url": "img/updated_joombow.jpg",
         "other_image_url" : ["img/joombow_truck.jpg", "img/joombow_plans4.jpg", "img/joombow_plans3.jpg"],
         "slug": "joombow",
         "conclusion_date": "2nd October 2024",
