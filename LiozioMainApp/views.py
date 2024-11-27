@@ -128,3 +128,19 @@ def career(request, slug):
     
     return render(request, 'LiozioMainApp/career.html', context)
 
+def events(request):
+    context = {
+        'active_page': 'Events',
+    }
+    
+    return render(request, 'LiozioMainApp/events.html', context)
+
+def event(request,slug):
+    context = {
+        'active_page': 'Event',
+    }
+    
+    if(slug):
+        return render(request, 'LiozioMainApp/event.html', context)
+    else:
+        return render(request, 'LiozioMainApp/event.html', context)

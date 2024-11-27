@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% load static %}
+{% block meta %}
+<meta name="DC.title" content="Liozio Companies Services - Innovative Solutions for Sustainable Development">
+<meta name="DC.description" content="Explore Liozio Companies' range of services dedicated to sustainable development and innovation. From architectural design to smart car solutions, discover how our expertise drives positive change.">
+<meta name="keywords" content="Liozio Companies, services, sustainable development, architectural design, urban planning, small group work, smart car solutions, real estate development, sustainable farming, innovation, Ibadan">
+<link rel="canonical" href="https://www.lioziocompanies.com/services/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Liozio Companies Services - Innovative Solutions for Sustainable Development">
+<meta name="twitter:description" content="Discover the diverse services offered by Liozio Companies, focusing on sustainable development and innovation. Learn about our architectural design, urban planning, and more.">
+<meta name="twitter:image" content="https://res.cloudinary.com/dcz2xlx1b/image/upload/v1722347219/logolight_qtttdz.png">
+<meta name="twitter:site" content="@LiozioCompanies">
+<link rel="alternate" href="https://www.lioziocompanies.com/services/" hreflang="en">
+{% endblock meta %}
+{% block title %}
+Liozio Companies Projects - Showcasing Our Sustainable Innovations and Solutions
+{% endblock title %}
+{% block styles %}
+    {% include 'LiozioMainApp/includes/_links.html' %}
+    
+    {% endblock styles %}
+  </head>
+  {% block content %}
+    <div id="smooth-wrapper" class="mil-wrapper">
+  
+    <!-- top panel -->
+    {% include 'LiozioMainApp/includes/_header.html' %}
+
+    <!-- top panel end -->
+
+         <!-- content -->
+         <div id="smooth-content" class="mil-content">
+
+            <!-- banner -->
+            <div class="mil-banner-space"></div>
+            <!-- banner end -->
+
+            <!-- project head -->
+            <div class="mil-p-200-0">
+                <div class="container">
+                    <ul class="mil-breadcrumbs mil-dark mil-mb-30 mil-up">
+                        <li><a href="/">Home</a></li> 
+                        <li><a href="{% url "events" %}">Events</a></li>
+                        <li><a href="{% url "event" 'award' %}">{{active_page}}</a></li>
+                    </ul>
+                    <h1 class="mil-mb-100 mil-up">Liozio Companies : First Quaterly Awards Ceremony</h1>
+                </div>
+            </div>
+            <!-- project head end -->
+
+            <!-- cover -->
+            <div class="mil-fw-image mil-up mil-mb-100">
+                <img loading="lazy" src="{% static "img/cake_cutting.jpg" %}" alt="image" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+            </div>
+            <!-- cover end -->
+
+            <!-- project info -->
+            <div class="mil-p-0-200">
+                <div class="container">
+                    <div class="mil-post-info mil-mb-100 mil-up">
+                        <h6>View More On:</h6>
+                        <a href="#." class="mil-text-link">Facebook</a>
+                        <a href="#." class="mil-text-link">X.com</a>
+                        <a href="#." class="mil-text-link">Linkedin</a>
+                        <a href="#." class="mil-text-link">Tiktok</a>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-xl-6 mil-mb-100">
+                            <h2 class="mil-mb-50 mil-up">Celebrating Excellence at Liozio Companies' First Quarterly Awards Ceremony</h2>
+                            <p class="mil-text-22 mil-mb-30 mil-up">Friday, November 15, 2024, marked a momentous occasion for Liozio Companies as the team came together to celebrate their inaugural Quarterly Awards Ceremony. Hosted by the charismatic <a href="#">Sheila Akpaso</a>, the event was a vibrant testament to the company’s commitment to recognizing excellence and fostering a culture of achievement.</p>
+                            <p class="mil-text-22 mil-mb-30 mil-up"><strong> A Night to Remember </strong> <br>
+                                The atmosphere was electrifying as employees, management, and special guests gathered to honor the outstanding efforts of individuals who have gone above and beyond in their roles. The event highlighted the values that define Liozio Companies: innovation, teamwork, and an unwavering dedication to success.</p>
+                            <h4 class="mil-up mil-mb-10">A Word from Leadership</h3>
+                            <p class="mil-up">
+                                In his keynote address, the CEO of Liozio Companies praised the awardees and all employees for their dedication, stating, <cite>“Our people are the cornerstone of our success. Today, we celebrate not just individual achievements but the collective strength that drives Liozio Companies forward.”</cite>
+
+
+                            </p>
+                        </div>
+                        <div class="col-xl-5 mil-mb-100">
+                            <ul class="mil-list-4" style="font-style:italic;">
+                                <li class="mil-up"><span>Date of Event : </span><span class="mil-dark">November 15th,  2024</span></li>
+                                <li class="mil-up"><span>Published by : </span><span class="mil-dark">Desmond Ucha</span></li>
+                                <li class="mil-up"><span>Venue : </span><span class="mil-dark">JOOMBOW 1, Bodija-Ashi, Ibadan</span></li>
+                                <li class="mil-up"><span>Host : </span><span class="mil-dark">Sheila Akpaso</span></li>
+                                <li class="mil-up"><span>Category : </span><span class="mil-dark">LC Quarterly Awards Ceremony</span></li>
+                                <li class="mil-up"><span>Notable Invitees : </span><span class="mil-dark">Harlem Solicitors</span></li>
+                                <li class="mil-up"><span>Awards : </span><span class="mil-dark">Learning Legend Award - Sheila Akpaso <br> Team Player Award - Desmond Ucha <br> Most Creative Employee - Victor Ajileye <br>Special Recognition Award - Oladele Alabi <br>The Best Employee of the Quarter - Sheila Akpaso <br> </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="mil-image-simple mil-square mil-up mil-mb-30">
+                                <img loading="lazy" src="{% static "img/ceo_address.jpg" %}" style="object-fit:contain;" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mil-image-simple mil-square mil-up mil-mb-30">
+                                <img loading="lazy" src="{% static "img/ceo_harlem.jpg" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 mil-text-center mil-mb-50">
+                            <p class="mil-text-14">Liozio Companies Awards Ceremony : The CEO,  addressing the audience with the CEO of Harlem by his side. <i> Photo Credit: Fatimat Siyaka </i></p>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="mil-image-simple mil-land-short mil-up mil-mb-30">
+                                <img loading="lazy" src="{% static "img/harlem_solicitors.jpg" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 mil-text-center mil-mb-50">
+                            <p class="mil-text-14">Special Recognition: Presented to the representatives of the specially invited members of Harlem Solicitors. <i> Photo Credit: Fatimat Siyaka </i></p>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="mil-image-simple mil-land-short mil-up mil-mb-30">
+                                <img loading="lazy" src="{% static "img/awardees.jpg" %}" alt="img" data-value-1="1" data-value-2="1.1" class="mil-scale-img">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 mil-text-center mil-mb-100">
+                            <p class="mil-text-14">Liozio Companies Awards Ceremony: A group photo of the awardees. <i> Photo Credit: Fatimat Siyaka </i></p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between mil-mb-60">
+                        <div class="col-xl-12">
+                            <p class="mil-up mil-mb-30"><strong> The Star Awards and Their Recipients </strong><br> The evening was punctuated with exciting award presentations. Each recipient exemplified the spirit of Liozio Companies, setting the bar for future achievements.</p>
+                            <p class="mil-up"><b>Learning Legend Award</b> : <i>Sheila Akpaso</i> – Recognized for her relentless pursuit of knowledge and professional development.</p>
+                            <p class="mil-up"><b>Team Player Award</b> : <i>Desmond Ucha </i> – Honored for his collaborative spirit and exceptional support for colleagues.</p>
+                            <p class="mil-up"><b>Most Creative Employee</b> : <i>Victor Ajileye </i> – Celebrated for his groundbreaking ideas and innovative contributions.</p>
+                            <p class="mil-up"><b>Special Recognition Award</b> : <i>Oladele Alabi </i> – Acknowledged for his extraordinary dedication and impact on key projects.</p>
+                            <p class="mil-up"><b>The Best Employee of the Quarter</b> : <i>Sheila Akpaso </i> – A well-deserved second accolade of the night for her unparalleled commitment and performance.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-xl-12">
+                            <p class="mil-up mil-mt-30"><strong> Looking Forward </strong><br> As the event drew to a close, attendees reflected on the accomplishments celebrated and the milestones yet to come. The ceremony not only reinforced a sense of pride among the staff but also set the stage for future endeavors and achievements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- project info end -->
+
+    <!-- footer -->
+    {% include "LiozioMainApp/includes/_footer.html" %}
+    <!-- footer end -->
+
+
+    </div>
+    <!-- content end -->
+
+    </div>
+
+    {% endblock content %}
+    {% block scripts %}
+        {% include "LiozioMainApp/includes/_scripts.html" %}
+    {% endblock scripts %}
+       

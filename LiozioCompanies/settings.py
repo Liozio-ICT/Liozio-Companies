@@ -128,7 +128,6 @@ STATIC_URL = 'LiozioMainApp/static/'
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
      BASE_DIR / 'LiozioMainApp/static/'
 ]
