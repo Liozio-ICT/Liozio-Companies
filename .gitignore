@@ -141,6 +141,7 @@ GitHub.sublime-settings
 .vercel
 
 test.*
+dumps*
 
 # Content and Docs
 *content.*
